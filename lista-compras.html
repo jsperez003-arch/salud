@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriChef - Lista de Compras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .category-title { background-color: #a8d5ba; padding: 4px 12px; border-radius: 5px; font-weight: bold; display: inline-block; font-size: 0.9rem; }
+    .aside-card { background-color: #ffffff; border-radius: 12px; border: 1px solid #e0e0e0; }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navigation Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="index.html">🥗 NutriChef</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="plan-semanal.html">Plan Comidas</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold" href="lista-compras.html">Lista de Compras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mi Cuenta 👤</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-4 flex-grow-1">
+    <h1 class="fw-bold mb-4">Mi Lista de Compras</h1>
+
+    <div class="row g-4">
+      <!-- Section Principal: Lista de Compras -->
+      <section class="col-lg-8">
+        
+        <!-- Categoría: Frutas y Verduras -->
+        <article class="mb-4">
+          <div class="category-title mb-3">FRUTAS Y VERDURAS</div>
+          <ul class="list-unstyled row g-2">
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item1">
+                <label class="form-check-label" for="item1">🍎 Manzanas (1kg)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item2">
+                <label class="form-check-label" for="item2">🍌 Plátanos (racimo)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item3">
+                <label class="form-check-label" for="item3">🥕 Zanahorias (paquete)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item4">
+                <label class="form-check-label" for="item4">🥬 Espinacas (bolsa)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item5">
+                <label class="form-check-label" for="item5">🍅 Tomates (5 unidades)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item6">
+                <label class="form-check-label" for="item6">🫐 Arándanos (caja)</label>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Categoría: Proteínas -->
+        <article class="mb-4">
+          <div class="category-title mb-3">PROTEÍNAS</div>
+          <ul class="list-unstyled row g-2">
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item7">
+                <label class="form-check-label" for="item7">🍗 Pechuga de Pollo (2 pzs)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item8">
+                <label class="form-check-label" for="item8">🐟 Salmón fresco (2 filetes)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item9">
+                <label class="form-check-label" for="item9">🟩 Tofu firme (200g)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item10">
+                <label class="form-check-label" for="item10">🥚 Huevos orgánicos (docena)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item11">
+                <label class="form-check-label" for="item11">🫘 Lentejas (bolsa 500g)</label>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Categoría: Lácteos -->
+        <article class="mb-4">
+          <div class="category-title mb-3">LÁCTEOS</div>
+          <ul class="list-unstyled row g-2">
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item12">
+                <label class="form-check-label" for="item12">🥛 Leche de Almendra (1L)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item13">
+                <label class="form-check-label" for="item13">🧀 Queso Fresco (1 cuña)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item14">
+                <label class="form-check-label" for="item14">🍦 Yogur Griego natural (500g)</label>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input item-check" type="checkbox" id="item15">
+                <label class="form-check-label" for="item15">🧈 Mantequilla sin sal</label>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Formulario para agregar items -->
+        <form id="addItemForm" class="d-flex gap-2 my-3">
+          <input type="text" class="form-control" id="newItemInput" placeholder="Nombre del nuevo ingrediente..." required>
+          <button type="submit" class="btn btn-outline-secondary text-nowrap">Añadir nuevo item (+)</button>
+        </form>
+
+        <div class="mt-3">
+          <button class="btn btn-outline-dark btn-sm" onclick="window.print()">Imprimir / Descargar Lista</button>
+        </div>
+      </section>
+
+      <!-- Panel Lateral (Aside) -->
+      <aside class="col-lg-4">
+        <div class="aside-card p-4 shadow-sm">
+          <h5 class="fw-bold mb-1">Progreso de Compra</h5>
+          <p class="text-muted" id="progressCounter">0/15 Items comprados</p>
+          <hr>
+          <h6 class="fw-bold mb-1">Sugerencia de Menú de Hoy</h6>
+          <p class="text-muted small">Pollo al Horno con Verduras</p>
+          <hr>
+          <h6 class="fw-bold mb-1">Perfil</h6>
+          <p class="mb-0 small"><strong>@ana_salud</strong> | <a href="plan-semanal.html" class="text-success text-decoration-none">Ver Plan</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

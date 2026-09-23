@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriChef - Plan Semanal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #e2efe7; }
+    .meal-card { background: white; border-radius: 12px; border: none; }
+    .meal-card img { height: 70px; object-fit: cover; border-radius: 8px; }
+    .day-header { background-color: #a8d5ba; color: #1e4d2b; font-weight: bold; }
+    .meal-category { font-weight: bold; color: #2e5b3e; }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Header / Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-success" href="index.html">🥗 NutriChef</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold" href="plan-semanal.html">Plan Semanal</a></li>
+            <li class="nav-item"><a class="nav-link" href="lista-compras.html">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="lista-compras.html">Lista de Compras</a></li>
+          </ul>
+          <span class="navbar-text fw-bold">👤 Usuario</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-4 flex-grow-1">
+    <h1 class="text-center fw-bold mb-4">Plan Semanal - Mi Menú</h1>
+
+    <section class="table-responsive">
+      <div class="row text-center mb-2 g-2 flex-nowrap min-vw-100 min-vw-lg-auto">
+        <div class="col"></div>
+        <div class="col day-header py-2 rounded">Lunes</div>
+        <div class="col day-header py-2 rounded">Martes</div>
+        <div class="col day-header py-2 rounded">Miércoles</div>
+        <div class="col day-header py-2 rounded">Jueves</div>
+        <div class="col day-header py-2 rounded">Viernes</div>
+      </div>
+
+      <!-- Desayuno -->
+      <div class="row align-items-center g-2 mb-3">
+        <div class="col-2 col-md-1 meal-category text-end">Desayuno</div>
+        <!-- 5 columnas para días -->
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Avena">
+            <h4 class="h6 mb-1">Avena con Frutas</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Avena">
+            <h4 class="h6 mb-1">Avena con Frutas</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Avena">
+            <h4 class="h6 mb-1">Avena con Frutas</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Avena">
+            <h4 class="h6 mb-1">Avena con Frutas</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Avena">
+            <h4 class="h6 mb-1">Avena con Frutas</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+      </div>
+
+      <!-- Comida -->
+      <div class="row align-items-center g-2 mb-3">
+        <div class="col-2 col-md-1 meal-category text-end">Comida</div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Pechuga">
+            <h4 class="h6 mb-1">Pechuga a la Plancha</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Pechuga">
+            <h4 class="h6 mb-1">Pechuga a la Plancha</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Pechuga">
+            <h4 class="h6 mb-1">Pechuga a la Plancha</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Pechuga">
+            <h4 class="h6 mb-1">Pechuga a la Plancha</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Pechuga">
+            <h4 class="h6 mb-1">Pechuga a la Plancha</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+      </div>
+
+      <!-- Cena -->
+      <div class="row align-items-center g-2 mb-3">
+        <div class="col-2 col-md-1 meal-category text-end">Cena</div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Salmón">
+            <h4 class="h6 mb-1">Salmón con Verduras</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Salmón">
+            <h4 class="h6 mb-1">Salmón con Verduras</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Salmón">
+            <h4 class="h6 mb-1">Salmón con Verduras</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Salmón">
+            <h4 class="h6 mb-1">Salmón con Verduras</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+        <div class="col">
+          <article class="meal-card p-2 shadow-sm text-center">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&auto=format&fit=crop" class="img-fluid mb-1" alt="Salmón">
+            <h4 class="h6 mb-1">Salmón con Verduras</h4>
+            <button class="btn btn-sm btn-link text-decoration-none p-0">Detalles &rarr;</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-end mt-4">
+      <button class="btn btn-success px-4" id="btnGuardarPlan">Guardar Plan</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
